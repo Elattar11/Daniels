@@ -1,0 +1,25 @@
+/* Montserrat */
+@font-face {
+    src: url(../myfonts/Montserrat-VariableFont_wght.ttf);
+    font-family: "Montserrat";
+    
+}
+
+/* Montserrat Extra Bold*/
+@font-face {
+    font-family: "Montserrat-EB";
+    src: url(../myfonts/static/Montserrat-ExtraBold.ttf);
+}
+
+
+/* Poppins */
+@font-face {
+    font-family: "poppins";
+    src: url(../myfonts/poppins-font/Poppins-Light.ttf);
+}
+
+/* Poppins Extra Bold */
+@font-face {
+    font-family: "poppinsEB";
+    src: url(../myfonts/poppins-font/Poppins-ExtraBold.ttf);
+}

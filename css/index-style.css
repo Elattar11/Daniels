@@ -1,0 +1,647 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+
+a
+{
+    text-decoration: none;
+}
+body
+{
+    font-family: "Montserrat";
+}
+
+
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/bg.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+header .main-title
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+header .second-title
+{
+    font-size: 60px;
+    font-weight: 200;
+}
+
+header .span-title
+{
+    font-weight: 400;
+
+}
+.navbar .nav-link
+{
+    transition: all 0.5s;
+}
+.navbar .nav-link:hover
+{
+    color: #111;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #111;
+    font-weight: 600;
+}
+.nav-shadow
+{
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+}
+.nav-links ul li a
+{
+    font-size: 13px;
+}
+
+.home-links
+{
+    margin-top: 50px;
+}
+
+.home .home-links ul li a i
+{
+    display: flex;
+    color: white;
+    height: 35px;
+    width: 35px;
+
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0,0,0,0.7);
+}
+.bgColor
+{
+    background-color: white;
+    color: black;
+}
+
+.white-text
+{
+    color: white;
+}
+
+.mb-30
+{
+    margin-bottom: 30px;
+}
+.hero-img
+{
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.hero-subtitle
+{
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.about .content .about-title
+{
+    font-family: "Montserrat-EB";
+    font-size: 30px;
+}
+.about .content .about-subject
+{
+    font-family: "poppins";
+}
+
+.text-dim-grey
+{
+    color: #9c9499;
+}
+
+.jerry
+{
+    font-family: "poppinsEB";
+}
+
+.about .skills
+{
+    margin-top: 30px;
+}
+.about .skills h6
+{
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.about .skills .item
+{
+    margin-bottom: 30px;
+}
+.about .skills .skill-progress
+{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    position: relative;
+    
+}
+
+.about .skills .skill-progress span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    transition: all 1s;
+    width: 0%;
+}
+
+.about .skills .skill-progress span:hover
+{
+    width: 95%;
+}
+.cv
+{
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+
+.cn
+{
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+
+.cv:hover
+{
+    background-color: transparent;
+    
+}
+
+.cn:hover
+{
+    background: #1c1c1c;
+}
+
+
+
+.about .about-links
+{
+    margin-top: 100px;
+}
+
+
+.cv-bg
+{
+    background: #1c1c1c;
+    color: #eee;
+    transition: all 0.5s;
+}
+
+.cn-bg
+{
+    background: #eee;
+    color: #1c1c1c;
+    transition: all 0.5s;
+}
+
+.cv-bg:hover
+{
+    color: #1c1c1c;
+}
+
+.cn-bg:hover
+{
+    color: #eee;
+}
+
+.about .skills .skill-progress span::after
+{
+    content: attr(data-value);
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 11px;
+    color: #fff;
+}
+.hero-img::after
+{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+
+/* Services */
+
+.bg-gray 
+{
+    background: #f7f7f7;
+}
+
+.services-title
+{
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: "Montserrat-EB";
+    font-size: 40px;
+    color: #343434;
+    font-weight: bold;
+}
+.services-title h3
+{
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+.services-title h3::after
+{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.services .item
+{
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+}
+
+.services .item .icon
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.services .item h6
+{
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.services .item p
+{
+    word-spacing: 2px;
+    font-size: 14px;
+}
+
+.pb-70 
+{
+    padding-bottom: 70px;
+}
+
+.section-padding 
+{
+    padding: 100px 0;
+}
+
+.services .item:hover .icon
+{
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.bg-offwhite
+{
+    background-color: whitesmoke;
+}
+
+
+/* Works */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white;
+    background-color: #1c1c1c;
+    border-radius: 30px;
+    padding-inline: 20px;
+
+}
+
+.portfolio .nav-link {
+    
+    color: #223c4e;
+}
+
+.font-poppins
+{
+    font-family: "poppinsEB";
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.portfolio .inner h6
+{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.portfolio .content
+{
+    top: -50%;
+    transform: translateY(-50%);
+    transition: 0.5s all;
+    z-index: 99;
+}
+
+.portfolio .icons
+{
+    top: 150%;
+    z-index: 99;
+    
+    transition: 0.5s all;
+}
+.icons .icon i 
+{
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+}
+
+.inner:hover .content
+{
+    top: 40%;
+}
+
+.inner:hover .icons
+{
+    top: 50%;
+}
+
+.portfolio .layer
+{
+    margin: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s;
+}
+
+.inner:hover .layer
+{
+    opacity: 1;
+}
+
+.portfolio .icons :hover
+{
+    background-color: white;
+    color: black;
+}
+
+.testimonials .clients-img
+{
+    width: 90px;
+    height: 90px;
+}
+
+.testimonials .clients-content h6
+{
+    font-size: 16x;
+    font-weight: 600;
+    color: #343434;
+}
+
+.testimonials .clients-content span
+{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888888;
+    font-family: "poppins";
+}
+
+.carousel-indicators [data-bs-target] {
+    all:unset;
+    width: 10px;
+    height: 10px;
+    background: #869791;
+    margin: 5px 7px;
+    border-radius: 30px;
+    opacity: 0.5;
+    cursor: pointer;
+   
+}
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+.carousel-indicators [data-bs-target]:hover
+{
+    opacity: 1;
+}
+.customers .icon
+{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.customers h3 
+{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.customers p 
+{
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #748182;
+}
+
+.contact .icon
+{
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+    
+}
+
+.contact .item:hover .icon
+{
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.contact .item h6
+{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact .item p
+{
+    font-size: 15px;
+    color: #748182;
+}
+
+.contact .form
+{
+    margin-top: 50px;
+}
+.contact .form input ,.contact .form textarea
+{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+.contact .form-control:focus
+{
+    border-color: transparent !important;
+    box-shadow: none;
+}
+
+.contact .container
+{
+    width: 70%;
+}
+
+.footer
+{
+    background: #1c1c1c;
+    padding: 30px;
+}
+.footer p
+{
+    font-size: 13px;
+    word-spacing: 2px;
+    color: #748182;   
+
+}
+
+.teams .text-team
+{
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+
+    background-color: #5b5b5b;
+}
+
+.teams .text-team
+{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.teams .layer
+{
+    margin: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s;
+}
+
+.img-team
+{
+    overflow: hidden;
+}
+.teams .social-links
+{
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 5px;
+    opacity: 0;
+    transition: 0.5s;
+    /* transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5); */
+}
+
+.teams .social-links i 
+{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+}
+
+.teams .social-links :hover
+{
+    background-color: white;
+    color: black;
+}
+.teams .single:hover .social-links
+{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+.teams .single:hover img
+{
+    transform: scale(1.1,1.1);
+}
+.single-img img
+{
+    transition: 0.5s;
+}
